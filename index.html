@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Seu Produto – Nome da Marca</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; }
+    header { background:#004080; color:#fff; padding:12px; display:flex; align-items:center; justify-content:space-between; }
+    header nav a { color:#fff; margin:0 8px; text-decoration:none; }
+    .hero { position:relative; height:400px; background:url('capa.jpg') center/cover no-repeat; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow:1px 1px 3px rgba(0,0,0,0.7); }
+    .hero h1 { font-size:2.5rem; }
+    .btn-primary { background:#FFA500; color:#fff; padding:12px 24px; border:none; cursor:pointer; font-size:1rem; }
+    .container { max-width:1200px; margin:40px auto; padding:0 16px; }
+    .products { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:20px; }
+    .product-card { border:1px solid #ddd; border-radius:4px; padding:16px; text-align:center; }
+    .product-card img { width:100%; height:auto; border-bottom:1px solid #ddd; margin-bottom:12px; }
+    .team { display:flex; flex-wrap:wrap; gap:24px; justify-content:center; }
+    .team-member { text-align:center; max-width:200px; }
+    .team-member img { width:150px; height:150px; border-radius:50%; }
+    footer { background:#f4f4f4; padding:20px; text-align:center; font-size:0.9rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><strong>SeuLogo</strong></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#qualidade">Qualidade</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div>
+    <h1>Mais Energia, Mais Vitalidade</h1>
+    <button class="btn-primary">Comprar Agora</button>
+  </div>
+</section>
+
+<section id="produtos" class="container">
+  <h2>Produtos Destaque</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="produto1.jpg" alt="Produto 1">
+      <h3>Produto 1</h3>
+      <p>Breve descrição do produto.</p>
+      <button class="btn-primary">Ver Detalhes</button>
+    </div>
+    <div class="product-card">
+      <img src="produto2.jpg" alt="Produto 2">
+      <h3>Produto 2</h3>
+      <p>Breve descrição do produto.</p>
+      <button class="btn-primary">Ver Detalhes</button>
+    </div>
+    <!-- Repetir para mais produtos -->
+  </div>
+</section>
+
+<section id="qualidade" class="container">
+  <h2>Qualidade Garantida</h2>
+  <p>Explicação sobre testes, fabricação, certificações, garantia de satisfação.</p>
+</section>
+
+<section id="sobre" class="container">
+  <h2>Conheça Nossa Equipe</h2>
+  <div class="team">
+    <div class="team-member">
+      <img src="doc1.jpg" alt="Dr. Fulano">
+      <h4>Dr. Fulano, MD</h4>
+      <p>Especialidade ou cargo.</p>
+    </div>
+    <div class="team-member">
+      <img src="doc2.jpg" alt="Drª Beltrana">
+      <h4>Drª Beltrana, ND</h4>
+      <p>Especialidade ou cargo.</p>
+    </div>
+    <!-- etc -->
+  </div>
+</section>
+
+<section id="contato" class="container">
+  <h2>Contato</h2>
+  <form>
+    <label>Nome</label><br><input type="text"><br>
+    <label>E‑mail</label><br><input type="email"><br>
+    <label>Mensagem</label><br><textarea rows="4"></textarea><br>
+    <button class="btn-primary" type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Nome da Marca. <a href="#politica">Política de Privacidade</a> | <a href="#termos">Termos & Condições</a></p>
+</footer>
+
+</body>
+</html>
